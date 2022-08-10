@@ -1,39 +1,44 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import HeaderAdmin from "../../layout/HeaderAdmin/HeaderAdmin";
 import Table from "react-bootstrap/Table";
 import styled from "./ManageInventoryAndPrices.module.css";
+import axios from "axios";
 
 export const ManageInventoryAndPrices = () => {
+  const [Product, setProduct] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:3003/Product").then((response) => {
+      setProduct(response.data);
+    });
+  });
+
   return (
     <Fragment>
       <HeaderAdmin number={{ background: "rgb(93, 93, 250)" }} />
+      <div>
+        <h1>مدریت موجودی و قیمت ها</h1>
+      </div>
       <Table striped bordered hover>
         <thead>
           <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
+            <th>کالا</th>
+            <th>قیمت</th>
+            <th>موجودی</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td colSpan={2}>Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
+          {Product.map((item) => {
+            return (
+              <>
+                <tr>
+                  <td>{item.name}</td>
+                  <td>{item.section}</td>
+                  <td>{item.inventory}</td>
+                </tr>
+              </>
+            );
+          })}
         </tbody>
       </Table>
     </Fragment>

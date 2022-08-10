@@ -8,12 +8,24 @@ import { useEffect } from "react";
 
 export const OrderManagement = () => {
   const [User, setUser] = useState([]);
+  const [Image , setImage] = useState();
  useEffect(()=>{
-    axios.get("http://localhost:3003/Order").then(function(response) {
+    axios.get("http://localhost:3003/Orders").then(function(response) {
         setUser(response.data);
       });
  },[])
-    
+ const uploadImage = (e) => {
+  let file = e.target.files[0];
+
+  let reader = new FileReader();
+  reader.readAsDataURL(file);
+  reader.onload = (e) => {
+    setImage({
+      image: e.target.result
+    });
+    axios.post('http://localhost:3003/Image',Image)
+  };
+};
 
   const handleOrder =(id) =>{
       
@@ -22,7 +34,18 @@ export const OrderManagement = () => {
   return (
     <Fragment>
       <HeaderAdmin cart={{ background: "rgb(93, 93, 250)" }} />
-      <Table striped bordered hover>
+      <div className="d-flex ">
+        <h1>مدریت سفارش ها</h1>
+        <div className="mr-6">
+        <label htmlFor="order">سفارش های تحویل شده</label>
+        <input type="radio" checked/>
+        </div>
+       <div>
+       <label htmlFor="orders">سفارش های در انتضار ارسال</label>
+        <input type="radio" />
+       </div>
+      </div>
+      <Table striped bordered hover >
         <thead>
           <tr>
             <th>نام کاربری</th>
@@ -45,6 +68,7 @@ export const OrderManagement = () => {
             );
           })}
         </tbody>
+       
       </Table>
     </Fragment>
   );
