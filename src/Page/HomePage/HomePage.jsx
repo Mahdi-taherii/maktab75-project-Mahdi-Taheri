@@ -14,9 +14,8 @@ export const HomePage = () => {
   const handleClick = () =>{
     axios({
       method: 'post',
-      url: 'http://localhost:3003/product',
+      url: 'http://localhost:3003/Cart',
       data: {
-        id: 4,
         name : "سامسونگ a20",
         section : 250
       }

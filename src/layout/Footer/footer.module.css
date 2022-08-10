@@ -2,7 +2,7 @@ footer{
     margin-top: 500px;
     background-color: white;
 }
-.fot-posh{
+.fotposh{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -15,7 +15,7 @@ footer{
     margin-right: 1%;
     margin-top: 15px;
 }
-.title-he{
+.titlehe{
  font-weight: bold;
  color: rgb(119, 116, 116);
  margin-right: 5px;
@@ -25,30 +25,30 @@ footer{
  margin-right: 5px;
  color: rgb(119, 116, 116);
 }
-.sort-foot{
+.sortfoot{
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
     
 }
-.list-foot{
+.listfoot{
     list-style: none;
 }
-.list-foot a {
+.listfoot a {
     text-decoration: none;
     margin-right: -35px;
     color: rgb(139, 133, 133);
 }
-.list-foot a:hover{
+.listfoot a:hover{
     color: black;
 }
-.order-list{
+.orderlist{
     width: 20%;
     margin-right: 25px;
     margin-top: 20px;
     margin-bottom: 40px;
 }
-.input-email{
+.inputemail{
   width: 80%;
   height: 35px;
   background-color: #efefef;
@@ -58,7 +58,7 @@ footer{
   outline: none;
   margin-bottom: 20px;
 }
-.btn-email{
+.btnemail{
     color: white;
     background-color: rgb(62, 62, 240);
     width: 60px;
@@ -68,12 +68,12 @@ footer{
 }
  
 @media screen and (max-width: 1000px){
-  .order-list{
+  .orderlist{
     width: 30%;
   }
 }
 @media screen and (max-width: 700px){
-    .order-list{
+    .orderlist{
         width: 100%;
       }
       .pshtibane{
