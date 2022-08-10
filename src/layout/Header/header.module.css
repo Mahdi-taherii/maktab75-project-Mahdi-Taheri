@@ -1,0 +1,263 @@
+header{
+    position: relative;
+    z-index: 1;
+}
+.header{
+    background-color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    border-bottom: 1px solid rgb(233, 230, 230);
+    display: flex;
+}
+
+.navbar{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-top: 1px solid rgb(219, 214, 214);
+    border-bottom: 1px solid rgb(219, 214, 214);
+    background-color: #fdfdfd;
+}
+.admin a{
+    text-decoration: none;
+}
+.adminbox{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin-right: 10px;
+}
+.user a{
+    text-decoration: none;
+    margin-left: 5px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.searchbox{
+    display: flex;
+    
+    width: 45%;
+    height: 45px;
+    box-shadow:
+  0px 0px 1.9px rgba(0, 0, 0, 0.081),
+  0px 0px 15px rgba(0, 0, 0, 0.15)
+;
+border-radius:15px;
+}
+.iconsearch{
+    width: 60px;
+    height: 100%;
+    background-color: rgb(57, 57, 243);
+    border-radius:15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconsearch:hover{
+    background-color: blue;
+}
+.inputsearch{
+    width: 93%;
+    border: none;
+    border-radius:15px;
+    padding-right: 10px;
+    outline: none;
+}
+.cart{
+    width: 170px;
+    height: 90%;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+    align-items: center;
+    margin-left: 10px;
+}
+.iconcart{
+    width: 30%;
+    margin-right: 8px;
+    
+}
+.inputsearch:active{
+    border: none;
+}
+.number{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    color: blue;
+    border-radius:50% ;
+    margin-left: 8px;
+}
+.section{
+    margin-top: -10px;
+    width: 35%;
+    font-size: 12px;
+    color: white;
+}
+
+.ul{
+    display: flex;
+    list-style: none;
+}
+.product a{
+    text-decoration: none;
+    color: rgb(114, 111, 111);
+    font-weight: bold;
+}
+.product a{
+    margin-left: 15px;
+    color: #616161;
+    transition: 0.2s;
+    position: relative;
+    padding: 22px 0;
+}
+.product a:hover{
+ color: blue;
+ transition: 0.2s;
+}
+.product a::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width:0;
+    height: 2px;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #651fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.product:hover a::before{ 
+    width: 100%;
+}
+
+.hambermenu{
+ display: none;
+}
+.headerres{
+    border-bottom: 1px solid rgb(187, 181, 181);
+    height: 300px;
+    display: none;
+    background-color: white;
+}
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.boxbut{
+    width: 100%;
+}
+.boxbut .searchbox{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 90%;
+    margin-right: 5%;
+}
+.divhamber{
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(243, 235, 235);
+    border: 1px solid rgb(143, 139, 139);
+    top: 0;
+    transition: 0.5s;
+}
+.logoham{
+    margin-right: 60px;
+    border-bottom: 1px solid rgb(73, 72, 72);
+}
+.backdiv{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 270px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listkal{
+    line-height: 2;
+    width: 90%;
+    height: 500px;
+    margin-right: 5%;
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(117, 111, 111);
+}
+.prod:hover{
+    color: black;
+}
+.prod{
+    position: relative;
+}
+.selected{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    right: 250px;
+    top: 12px;
+}
+.ulmob{
+    margin-right: -20px;
+    font-size: 15px;
+    list-style: none;
+}
+.ulmob li a{
+    text-decoration: none;
+    color: black;
+}
+.ulmob li a:hover{
+    color: blue;
+}
+
+
+@media screen and (max-width: 1300px){
+    .navlink{
+        display: none;
+    }
+    .hambermenu{
+        display: inline;
+    }
+    
+}
+
+@media screen and (max-width: 1000px){
+    .searchbox{
+        width: 90%;
+    }
+    .header{
+        display: none;
+        
+    }
+    .headerres{
+        display: inline;
+        background-color: white;
+    }
+}
+
