@@ -14,11 +14,7 @@ export const HomePage = () => {
   const handleClick = () =>{
     axios({
       method: 'post',
-      url: 'http://localhost:3003/Cart',
-      data: {
-        name : "سامسونگ a20",
-        section : 250
-      }
+      url: 'http://localhost:3003/Product',
     });
   }
  
@@ -53,14 +49,7 @@ export const HomePage = () => {
         <div className={styled.Carousel2}></div>
       </div>
       <div>
-        {local.map(item=>{
-          return(
-            <>
-            <img src={item.image} alt="logo" />
-            </>
-          )
-        })}
-        
+        <button onClick={handleClick}>submit</button>
       </div>
       <Footer />
     </Fragment>
