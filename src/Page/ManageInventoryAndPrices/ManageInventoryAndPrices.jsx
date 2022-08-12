@@ -4,6 +4,7 @@ import Table from "react-bootstrap/Table";
 import styled from "./ManageInventoryAndPrices.module.css";
 import axios from "axios";
 import { Pagination } from "react-bootstrap";
+import { ButtonSend } from "../../components/Button/Button";
 
 export const ManageInventoryAndPrices = () => {
   const [Product, setProduct] = useState([]);
@@ -46,8 +47,9 @@ export const ManageInventoryAndPrices = () => {
   return (
     <Fragment>
       <HeaderAdmin number={{ background: "rgb(93, 93, 250)" }} />
-      <div>
-        <h1>مدریت موجودی و قیمت ها</h1>
+      <div className="d-flex p-2">
+        <h1 className="col-11">مدریت موجودی و قیمت ها</h1>
+        <ButtonSend color={"success"}>ذخیره</ButtonSend>
       </div>
       <Table striped bordered hover>
         <thead>

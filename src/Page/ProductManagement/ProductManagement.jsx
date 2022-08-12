@@ -6,6 +6,7 @@ import del from "../../assets/images/icons8-delete-64.png";
 import edit from "../../assets/images/icons8-edit-64.png";
 import Pagination from "react-bootstrap/Pagination";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { ButtonSend } from "../../components/Button/Button";
 
 export const ProductManagement = () => {
   const [Product, setProduct] = useState([]);
@@ -47,11 +48,30 @@ export const ProductManagement = () => {
     return
   }
 
+  const handleFilter = (value) =>{
+    axios
+      .get(`http://localhost:3003/Product?leader=${value}`)
+      .then((response) => {
+        setProduct(response.data);
+      });
+  }
+
 
   return (
     <Fragment>
       <HeaderAdmin product={{ background: "rgb(93, 93, 250)" }} />
-      <h1>مدریت کالاها</h1>
+      <div className="d-flex p-2">
+      <h1 className="col-6">مدریت کالاها</h1>
+      <div className="col-5">
+        <select name="" id="demo" onChange={(e)=>handleFilter(e.target.value)}>
+          <option value="فیلتر کردن">فیلتر کردن</option>
+          <option value="گوشی موبایل" >گوشی موبایل</option>
+          <option value="لپ تاپ" >لپ تاپ</option>
+          <option value="دوربین" >دوربین</option>
+        </select>
+      </div>
+      <ButtonSend color={"success"}>افزودن کالا</ButtonSend>
+      </div>
       <Table striped bordered hover>
         <thead>
           <tr>

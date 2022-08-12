@@ -69,11 +69,11 @@ const confirmation = () =>{
         <h1 className="col-8">مدریت سفارش ها</h1>
         <div className="col-2">
         <label htmlFor="order">سفارش های تحویل شده</label>
-        <input type="radio" name="radio" onClick={waiting}/>
+        <input type="radio" name="radio" id="order" onClick={waiting}/>
         </div>
        <div className="col-2">
        <label htmlFor="orders">سفارش های در انتضار ارسال</label>
-        <input type="radio" name="radio" onClick={confirmation}/>
+        <input type="radio" name="radio" id="orders" onClick={confirmation}/>
        </div>
       </div>
       <Table striped bordered hover >
