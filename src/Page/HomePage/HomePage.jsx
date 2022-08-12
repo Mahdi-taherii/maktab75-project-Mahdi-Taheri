@@ -10,19 +10,22 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 
 export const HomePage = () => {
-
+  const [local , setlocal ] = useState([])
   const handleClick = () =>{
     axios({
       method: 'post',
-      url: 'http://localhost:3003/product',
-      data: {
-        id: 4,
-        name : "سامسونگ a20",
-        section : 250
-      }
+      url: 'http://localhost:3003/Product',
     });
   }
-
+ 
+  useEffect(()=>{
+    axios.get('http://localhost:3003/Image')
+    .then((response)=>{
+      setlocal(response.data)
+      console.log(response.data);
+    })
+    
+  },[])
   
 
   return (
@@ -45,10 +48,10 @@ export const HomePage = () => {
         </div>
         <div className={styled.Carousel2}></div>
       </div>
-      <Footer />
       <div>
         <button onClick={handleClick}>submit</button>
       </div>
+      <Footer />
     </Fragment>
   );
 }

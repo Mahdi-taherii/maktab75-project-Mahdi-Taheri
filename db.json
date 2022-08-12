@@ -1,0 +1,264 @@
+{
+  "users": [
+    {
+      "username": "tmhdy166@gmail.com",
+      "password": "21501380"
+    }
+  ],
+  "product": [
+    {
+      "image": "https://dkstatics-public.digikala.com/digikala-products/4315d0f9707d404dbd6e4ffd70b4eda445c3f63c_1654602930.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "name": "گوشی موبایل سامسونگ مدل Galaxy A53",
+      "group": "کالای دیجیتال",
+      "leader": "گوشی موبایل",
+      "Description": "<ul><li>فناوری صفحه‌نمایش :Dynamic AMOLED 2X</li><li>اندازه :6.8</li><li>شبکه های ارتباطی :2G، 3G، 4G، 5G</li><li>حافظه داخلی :256 گیگابایت</li><li>نسخه سیستم عامل :Android 11<li/></ul>",
+      "section": 12500000,
+      "inventory": 12,
+      "date": "1401/5/19",
+      "createdAt": 1660161772929,
+      "id": 1
+    },
+    {
+      "image": "https://dkstatics-public.digikala.com/digikala-products/455da9a4101537c98879ee5c290a7c985ca7ab71_1652263696.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "name": "گوشی موبایل سامسونگ Galaxy s22 Ultru 5G",
+      "group": "کالای دیجیتال",
+      "leader": "گوشی موبایل",
+      "Description": "<ul><li>فناوری صفحه‌نمایش :Dynamic AMOLED 2X</li><li>اندازه :6.8</li><li>شبکه های ارتباطی :2G، 3G، 4G، 5G</li><li>حافظه داخلی :256 گیگابایت</li><li>نسخه سیستم عامل :Android 11<li/></ul>",
+      "section": 38449000,
+      "inventory": 25,
+      "date": "1401/5/19",
+      "createdAt": 1660161814349,
+      "id": 2
+    },
+    {
+      "image": "https://dkstatics-public.digikala.com/digikala-products/455da9a4101537c98879ee5c290a7c985ca7ab71_1652263696.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "name": "گوشی موبایل سامسونگ Galaxy s22 Ultru 5G",
+      "group": "کالای دیجیتال",
+      "leader": "گوشی موبایل",
+      "Description": "<ul><li>فناوری صفحه‌نمایش :Dynamic AMOLED 2X</li><li>اندازه :6.8</li><li>شبکه های ارتباطی :2G، 3G، 4G، 5G</li><li>حافظه داخلی :256 گیگابایت</li><li>نسخه سیستم عامل :Android 11<li/></ul>",
+      "section": 38449000,
+      "inventory": 25,
+      "date": "1401/5/19",
+      "createdAt": 1660161854167,
+      "id": 3
+    },
+    {
+      "image": "https://dkstatics-public.digikala.com/digikala-products/e16b1b62307059cbecddd6ed23e6f74979dc9ea5_1656933528.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "name": "گوشی موبایل شیایومی مدل Mi 11 Ultra M2102K1c",
+      "group": "کالای دیجیتال",
+      "leader": "گوشی موبایل",
+      "Description": "<ul><li>فناوری صفحه‌نمایش :Dynamic AMOLED 2X</li><li>اندازه :6.8</li><li>شبکه های ارتباطی :2G، 3G، 4G، 5G</li><li>حافظه داخلی :256 گیگابایت</li><li>نسخه سیستم عامل :Android 11<li/></ul>",
+      "section": 35850000,
+      "inventory": 18,
+      "date": "1401/5/19",
+      "createdAt": 1660161935303,
+      "id": 4
+    },
+    {
+      "image": "https://dkstatics-public.digikala.com/digikala-products/bbfae5e7d0e23ce89021cd94878df040fe90fc6b_1653804653.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "name": "گوشی موبایل اپل مدل iPhone 13 Pro Max A2644",
+      "group": "کالای دیجیتال",
+      "leader": "گوشی موبایل",
+      "Description": "<ul><li>فناوری صفحه‌نمایش :Dynamic AMOLED 2X</li><li>اندازه :6.8</li><li>شبکه های ارتباطی :2G، 3G، 4G، 5G</li><li>حافظه داخلی :256 گیگابایت</li><li>نسخه سیستم عامل :Android 11<li/></ul>",
+      "section": 51989000,
+      "inventory": 8,
+      "date": "1401/5/19",
+      "createdAt": 1660161989831,
+      "id": 5
+    },
+    {
+      "image": "https://dkstatics-public.digikala.com/digikala-products/f2452246a68324ef20465e35ca76d2adcc63158e_1654673537.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "name": "گوشی موبایل سامسونگ مدی Galaxy A32 ",
+      "group": "کالای دیجیتال",
+      "leader": "گوشی موبایل",
+      "Description": "<ul><li>فناوری صفحه‌نمایش :Dynamic AMOLED 2X</li><li>اندازه :6.8</li><li>شبکه های ارتباطی :2G، 3G، 4G، 5G</li><li>حافظه داخلی :256 گیگابایت</li><li>نسخه سیستم عامل :Android 11<li/></ul>",
+      "section": 6249000,
+      "inventory": 18,
+      "date": "1401/5/19",
+      "createdAt": 1660162042615,
+      "id": 6
+    },
+    {
+      "image": "https://dkstatics-public.digikala.com/digikala-products/af5648b1b5b2bd984dac010f0a9f40805cd6f95b_1655546456.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "name": "گوشی موبایل شیاومی مدل Redmi Note 11",
+      "group": "کالای دیجیتال",
+      "leader": "گوشی موبایل",
+      "Description": "<ul><li>فناوری صفحه‌نمایش :Dynamic AMOLED 2X</li><li>اندازه :6.8</li><li>شبکه های ارتباطی :2G، 3G، 4G، 5G</li><li>حافظه داخلی :256 گیگابایت</li><li>نسخه سیستم عامل :Android 11<li/></ul>",
+      "section": 22500000,
+      "inventory": 5,
+      "date": "1401/5/19",
+      "createdAt": 1660162079360,
+      "id": 7
+    },
+    {
+      "image": "https://dkstatics-public.digikala.com/digikala-products/8fefee27206962e3715a78367f9041518cecef9c_1632236130.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "name": "دوربین دیجیتال کانن مدل Eos 90D",
+      "group": "کالای دیجیتال",
+      "leader": "دوربین",
+      "Description": "<ul><li>فناوری صفحه‌نمایش :Dynamic AMOLED 2X</li><li>اندازه :6.8</li><li>شبکه های ارتباطی :2G، 3G، 4G، 5G</li><li>حافظه داخلی :256 گیگابایت</li><li>نسخه سیستم عامل :Android 11<li/></ul>",
+      "section": 12500000,
+      "inventory": 6,
+      "date": "1401/5/19",
+      "createdAt": 1660162113641,
+      "id": 8
+    },
+    {
+      "image": "https://dkstatics-public.digikala.com/digikala-products/3533276.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "name": "دوربین دیجیتال کانن مدل Eos 4000D",
+      "group": "کالای دیجیتال",
+      "leader": "دوربین",
+      "Description": "<ul><li>فناوری صفحه‌نمایش :Dynamic AMOLED 2X</li><li>اندازه :6.8</li><li>شبکه های ارتباطی :2G، 3G، 4G، 5G</li><li>حافظه داخلی :256 گیگابایت</li><li>نسخه سیستم عامل :Android 11<li/></ul>",
+      "section": 21546000,
+      "inventory": 4,
+      "date": "1401/5/19",
+      "createdAt": 1660162146192,
+      "id": 9
+    },
+    {
+      "image": "https://dkstatics-public.digikala.com/digikala-products/60b06dce6c02b012aaa32321d11e2130ed599e43_1649043732.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "name": "دوربین دیجیتال سونی مدی A7 IV",
+      "group": "کالای دیجیتال",
+      "leader": "دوربین",
+      "Description": "<ul><li>فناوری صفحه‌نمایش :Dynamic AMOLED 2X</li><li>اندازه :6.8</li><li>شبکه های ارتباطی :2G، 3G، 4G، 5G</li><li>حافظه داخلی :256 گیگابایت</li><li>نسخه سیستم عامل :Android 11<li/></ul>",
+      "section": 73546000,
+      "inventory": 7,
+      "date": "1401/5/19",
+      "createdAt": 1660162174296,
+      "id": 10
+    },
+    {
+      "image": "https://dkstatics-public.digikala.com/digikala-products/7be62c97a37e0c942539ebcaaf5ff25baa5cd12a_1652706468.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "name": "لپ تاپ 16 اینچی لنوو مدل Legion 7 ",
+      "group": "کالای دیجیتال",
+      "leader": "لپ تاپ",
+      "Description": "<ul><li>فناوری صفحه‌نمایش :Dynamic AMOLED 2X</li><li>اندازه :6.8</li><li>شبکه های ارتباطی :2G، 3G، 4G، 5G</li><li>حافظه داخلی :256 گیگابایت</li><li>نسخه سیستم عامل :Android 11<li/></ul>",
+      "section": 45634000,
+      "inventory": 6,
+      "date": "1401/5/19",
+      "createdAt": 1660162204597,
+      "id": 11
+    },
+    {
+      "image": "https://dkstatics-public.digikala.com/digikala-products/7cea7aca2b40f8a5152f86aa28449efa34634a7d_1645858428.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "name": "لپ تاپ 15.6 اینچی ایسوس مدل ROG Strix G512IE",
+      "group": "کالای دیجیتال",
+      "leader": "لپ تاپ",
+      "Description": "<ul><li>فناوری صفحه‌نمایش :Dynamic AMOLED 2X</li><li>اندازه :6.8</li><li>شبکه های ارتباطی :2G، 3G، 4G، 5G</li><li>حافظه داخلی :256 گیگابایت</li><li>نسخه سیستم عامل :Android 11<li/></ul>",
+      "section": 25785000,
+      "inventory": 5,
+      "date": "1401/5/19",
+      "createdAt": 1660162244107,
+      "id": 12
+    },
+    {
+      "image": "https://dkstatics-public.digikala.com/digikala-products/42f8aa22a9a740fcc3e58324ebb44ce1262576da_1654514996.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "name": "لپ تاپ 16.2 اینچ اپل مدل MacBook Pro MK193 2021",
+      "group": "کالای دیجیتال",
+      "leader": "لپ تاپ",
+      "Description": "<ul><li>فناوری صفحه‌نمایش :Dynamic AMOLED 2X</li><li>اندازه :6.8</li><li>شبکه های ارتباطی :2G، 3G، 4G، 5G</li><li>حافظه داخلی :256 گیگابایت</li><li>نسخه سیستم عامل :Android 11<li/></ul>",
+      "section": 42563000,
+      "inventory": 9,
+      "date": "1401/5/19",
+      "createdAt": 1660162309485,
+      "id": 13
+    },
+    {
+      "image": "https://dkstatics-public.digikala.com/digikala-products/7fb830bace59a3dea52799820b49e6aa89c9d4dc_1620800474.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "name": "لپ تاپ 15.6 اینچ مدل ThinkBook 15-FB",
+      "group": "کالای دیجیتال",
+      "leader": "لپ تاپ",
+      "Description": "<ul><li>فناوری صفحه‌نمایش :Dynamic AMOLED 2X</li><li>اندازه :6.8</li><li>شبکه های ارتباطی :2G، 3G، 4G، 5G</li><li>حافظه داخلی :256 گیگابایت</li><li>نسخه سیستم عامل :Android 11<li/></ul>",
+      "section": 36500000,
+      "inventory": 7,
+      "date": "1401/5/19",
+      "createdAt": 1660162339783,
+      "id": 14
+    }
+  ],
+  "Cart": [
+    {
+      "name": "سامسونگ a20",
+      "section": 250,
+      "createdAt": 1660116521738,
+      "id": 1
+    },
+    {
+      "name": "سامسونگ a20",
+      "section": 250,
+      "createdAt": 1660116521884,
+      "id": 2
+    }
+  ],
+  "Orders": [
+    {
+      "id": 1,
+      "name": "مهدی",
+      "section": 500,
+      "time": "1401/10/21",
+      "Delivery" : false
+    },
+    {
+      "id": 2,
+      "name": "حسین",
+      "section": 450,
+      "time": "1401/10/21",
+      "Delivery" : true
+    },
+    {
+      "id": 3,
+      "name": "علی",
+      "section": 250,
+      "time": "1401/10/21",
+      "Delivery" : false
+    },
+    {
+      "id": 4,
+      "name": "رضا",
+      "section": 600,
+      "time": "1401/10/21",
+      "Delivery" : true
+    },
+    {
+      "id": 5,
+      "name": "محمد",
+      "section": 550,
+      "time": "1401/10/21",
+      "Delivery" : false
+    },
+    {
+      "id": 6,
+      "name": "جواد",
+      "section": 420,
+      "time": "1401/10/21",
+      "Delivery" : false
+    },
+    {
+      "id": 7,
+      "name": "داوود",
+      "section": 700,
+      "time": "1401/10/21",
+      "Delivery" : true
+    },
+    {
+      "id": 8,
+      "name": "حسن",
+      "section": 525,
+      "time": "1401/10/21",
+      "Delivery" : true
+    },
+    {
+      "id": 9,
+      "name": "شهرام",
+      "section": 580,
+      "time": "1401/10/21",
+      "Delivery" : false
+    },
+    {
+      "id": 10,
+      "name": "مسعود",
+      "section": 412,
+      "time": "1401/10/21",
+      "Delivery" : true
+    }
+  ]
+}
