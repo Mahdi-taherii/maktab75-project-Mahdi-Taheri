@@ -89,8 +89,15 @@ const handlepro = () =>{
         <div className={styled.navlink}>
           <ul className={styled.ul}>
             <li className={styled.product}>
-              <a href="#">کالای دیجیتال</a>
+              <a href="#" >کالای دیجیتال</a>
             </li>
+            <div className={styled.tasck}>
+              <ul>
+                <li>گوشی موبایل</li>
+                <li>لپ تاپ</li>
+                <li>دوربین</li>
+              </ul>
+            </div>
             <li className={styled.product}>
               <a href="#">آرایشی و بهداشتی</a>
             </li>

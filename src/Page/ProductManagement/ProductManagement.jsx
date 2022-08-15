@@ -78,8 +78,8 @@ export const ProductManagement = () => {
             <th>تصویر</th>
             <th>نام کالا</th>
             <th>دسته بندی</th>
-            <th>ویرایش</th>
-            <th>حذف</th>
+            <th className="text-center">ویرایش</th>
+            <th className="text-center">حذف</th>
           </tr>
         </thead>
         <tbody>
@@ -88,14 +88,14 @@ export const ProductManagement = () => {
               <>
                 <tr>
                   <td>
-                    <img src={item.image} alt="image" width={35} />
+                    <img src={`http://localhost:3003/files/${item.image[0]}`} alt="image" width={40} />
                   </td>
                   <td>{item.name}</td>
                   <td>{`${item.group}/${item.leader}`}</td>
-                  <td>
+                  <td className="text-center">
                     <img src={edit} alt="edit" width={30} />
                   </td>
-                  <td>
+                  <td className="text-center">
                     <img src={del} alt="del" width={30} />
                   </td>
                 </tr>

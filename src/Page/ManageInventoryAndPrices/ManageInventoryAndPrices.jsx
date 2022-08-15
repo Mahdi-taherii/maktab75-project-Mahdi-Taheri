@@ -65,7 +65,7 @@ export const ManageInventoryAndPrices = () => {
               <>
                 <tr>
                   <td>{item.name}</td>
-                  <td>{item.section}</td>
+                  <td>{item.section}تومان</td>
                   <td>{item.inventory}</td>
                 </tr>
               </>
