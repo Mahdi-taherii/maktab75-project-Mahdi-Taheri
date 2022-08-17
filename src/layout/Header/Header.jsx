@@ -26,7 +26,7 @@ const handlepro = () =>{
     <header>
       <div className={styled.header}>
         <div className={styled.logo}>
-          <img src={Logo} alt="logo" />
+          <Link to="/HomePage"><img src={Logo} alt="logo" /></Link>
         </div>
 
         <div className={styled.searchbox}>

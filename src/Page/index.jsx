@@ -1,7 +1,9 @@
 export {Cart} from "./Cart/Cart.page" ;
 export {FinalLevel} from "./FinalLevel/FinalLevel" ;
 export {HomePage} from "./HomePage/HomePage";
-export {ListProduct} from "./ListProduct/ListProduct"
+export {ListProductMobile} from "./ListProduct/ListProductMobile";
+export {ListProductLaptop} from "./ListProduct/ListProductLaptop";
+export {ListProductCamera} from "./ListProduct/ListProductCamera";
 export {ManageInventoryAndPrices} from "./ManageInventoryAndPrices/ManageInventoryAndPrices";
 export {OrderManagement} from "./OrderManagement/OrderManagement";
 export {PaymenyGateway} from "./PaymentGateway/PaymenyGateway";

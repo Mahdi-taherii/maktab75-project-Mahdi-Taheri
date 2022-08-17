@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "./CardProduct.module.css";
 
 const CardProduct = (props) => {
   return (
+   <Link to="/Product">
     <div className={styled.card}>
       <div className={styled.photo}>
           <img src={props.image} alt="image"  width={220} height={200}/>
@@ -14,6 +16,7 @@ const CardProduct = (props) => {
             {props.section}تومان
       </div>
     </div>
+   </Link>
   );
 };
 export default CardProduct;

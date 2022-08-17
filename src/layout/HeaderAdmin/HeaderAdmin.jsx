@@ -6,7 +6,7 @@ import styled from "./HeaderAdmin.module.css"
 function HeaderAdmin(props) {
     return ( 
         <header className={styled.header}>
-            <div className={styled.logoAdmin}><img src={logo} alt="logo" /><p className="panel">پنل مدریت فروشگاه</p></div>
+            <div className={styled.logoAdmin}><Link to="/HomePage"><img src={logo} alt="logo" /></Link><p className="panel">پنل مدریت فروشگاه</p></div>
             <div className={styled.page}>
                 <div className={styled.productss} style={props.product}><Link to="/Management">کالا ها </Link></div>
                 <div className={styled.numberr} style={props.number}><Link to="/Prices">موجودی و قیمت ها</Link></div>

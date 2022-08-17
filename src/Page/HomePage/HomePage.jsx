@@ -38,6 +38,7 @@ export const HomePage = () => {
       .then((response) => {
         setCamera(response.data);
       });
+      console.log(1&4);
   }, []);
 
   return (
@@ -97,7 +98,7 @@ export const HomePage = () => {
         <div className={styled.sliders}>
           <div className={styled.Caption}>
             <div className={styled.link}>
-              <Link to="/LoginAdmin">گوشی موبایل</Link>
+              <Link to="/ListProductMobile">گوشی موبایل</Link>
             </div>
           </div>
           <div className={styled.scrol}>
@@ -123,7 +124,7 @@ export const HomePage = () => {
         <div className={styled.sliders}>
           <div className={styled.Caption}>
             <div className={styled.link}>
-              <Link to="/LoginAdmin">لپ تاپ</Link>
+              <Link to="/ListProductLaptop">لپ تاپ</Link>
             </div>
           </div>
           <div className={styled.scrol}>
@@ -146,7 +147,7 @@ export const HomePage = () => {
         <div className={styled.sliders}>
           <div className={styled.Caption}>
             <div className={styled.link}>
-              <Link to="/LoginAdmin">دوربین</Link>
+              <Link to="/ListProductCamera">دوربین</Link>
             </div>
           </div>
           <div className={styled.scrol}>
