@@ -87,3 +87,6 @@
 .Footer{
     display: flex;
 }
+.position{
+  display: none;
+}

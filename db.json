@@ -20,10 +20,9 @@
       "group": "کالای دیجیتال",
       "leader": "گوشی موبایل",
       "Description": "<ul><li>فناوری صفحه‌نمایش :Dynamic AMOLED 2X</li><li>اندازه :6.8</li><li>شبکه های ارتباطی :2G، 3G، 4G، 5G</li><li>حافظه داخلی :256 گیگابایت</li><li>نسخه سیستم عامل :Android 11<li/></ul>",
-      "section": 12500000,
-      "inventory": 12,
+      "section": "12500000",
+      "inventory": "8",
       "date": "1401/5/19",
-      "createdAt": 1660161772929,
       "id": 1
     },
     {
@@ -37,10 +36,9 @@
       "group": "کالای دیجیتال",
       "leader": "گوشی موبایل",
       "Description": "<ul><li>فناوری صفحه‌نمایش :Dynamic AMOLED 2X</li><li>اندازه :6.8</li><li>شبکه های ارتباطی :2G، 3G، 4G، 5G</li><li>حافظه داخلی :256 گیگابایت</li><li>نسخه سیستم عامل :Android 11<li/></ul>",
-      "section": 38449000,
-      "inventory": 25,
+      "section": "32450000",
+      "inventory": "16",
       "date": "1401/5/19",
-      "createdAt": 1660161814349,
       "id": 2
     },
     {
@@ -769,5 +767,10 @@
       "Delivery": true
     }
   ],
-  "Customer": []
+  "Customer": [
+    {
+      "productId": 13,
+      "id": 1
+    }
+  ]
 }

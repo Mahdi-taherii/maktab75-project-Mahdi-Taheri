@@ -93,9 +93,9 @@ const handlepro = () =>{
             </li>
             <div className={styled.tasck}>
               <ul>
-                <li>گوشی موبایل</li>
-                <li>لپ تاپ</li>
-                <li>دوربین</li>
+                <li><Link to="./ListProduct/ListProductMobile">گوشی موبایل</Link></li>
+                <li><Link to="./ListProduct/ListProductLaptop">لپ تاپ</Link></li>
+                <li><Link to="./ListProduct/ListProductCamera">دوربین</Link></li>
               </ul>
             </div>
             <li className={styled.product}>
@@ -138,9 +138,9 @@ const handlepro = () =>{
             <div className={styled.prod}>کالای دیجیتال <div className={styled.selected} onClick={handlepro}>{!List ? <i className="fas fa-chevron-down"></i>: <i className="fas fa-chevron-up"></i>} </div></div>
             {List === true && <div>
                 <ul className={styled.ulmob}>
-                    <li><a href="">گوشی موبایل</a></li>
-                    <li><a href="">لپ تاپ</a></li>
-                    <li><a href="">دوربین</a></li>
+                    <li><Link to="/ListProductMobile">گوشی موبایل</Link></li>
+                    <li><Link to="/ListProductLaptop">لپ تاپ</Link></li>
+                    <li><Link to="/ListProductCamera">دوربین</Link></li>
                 </ul>
             </div> }
             <div className={styled.prod}>آرایشی و بهداشتی</div>

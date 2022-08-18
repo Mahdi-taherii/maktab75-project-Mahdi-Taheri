@@ -5,7 +5,7 @@ export const ButtonSend = (props) =>{
 
     return(
         <>
-        <Button variant={props.color}>{props.children}</Button>
+        <Button variant={props.color} onClick={props.onClick} disabled={props.disabled}>{props.children}</Button>
         </>
     )
 

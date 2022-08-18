@@ -5,7 +5,7 @@ import styled from "./CardProduct.module.css";
 const CardProduct = (props) => {
   return (
    <Link to="/Product">
-    <div className={styled.card}>
+    <div className={styled.card} onClick={()=>props.handleProduct()}>
       <div className={styled.photo}>
           <img src={props.image} alt="image"  width={220} height={200}/>
       </div>

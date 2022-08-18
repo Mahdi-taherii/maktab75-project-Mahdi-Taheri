@@ -16,11 +16,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import CardProduct from "../../components/Card/CardProduct";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { Product } from "../Product/Product";
 
-export const HomePage = () => {
+export const HomePage = (props) => {
   const [mobile, setMobile] = useState([]);
   const [laptop, setLaptop] = useState([]);
   const [camera, setCamera] = useState([]);
+  const [user ,setUser] = useState([])
 
   useEffect(() => {
     axios
@@ -38,8 +40,15 @@ export const HomePage = () => {
       .then((response) => {
         setCamera(response.data);
       });
-      console.log(1&4);
   }, []);
+
+  const handleProduct =  (Id) => {
+    axios.put(`http://localhost:3003/Customer/1`,{
+      productId : Id.id
+    })
+   localStorage.setItem("user" , JSON.stringify([Id]));
+   setUser(Id)
+  };
 
   return (
     <Fragment>
@@ -109,6 +118,9 @@ export const HomePage = () => {
                     image={`http://localhost:3003/files/${item.image[0]}`}
                     name={item.name}
                     section={item.section}
+                    handleProduct={() => {
+                      handleProduct(item);
+                    }}
                   />
                 </>
               );
@@ -135,6 +147,9 @@ export const HomePage = () => {
                     image={`http://localhost:3003/files/${item.image[0]}`}
                     name={item.name}
                     section={item.section}
+                    handleProduct={() => {
+                      handleProduct(item);
+                    }}
                   />
                 </>
               );
@@ -158,12 +173,18 @@ export const HomePage = () => {
                     image={`http://localhost:3003/files/${item.image[0]}`}
                     name={item.name}
                     section={item.section}
+                    handleProduct={() => {
+                      handleProduct(item);
+                    }}
                   />
                 </>
               );
             })}
           </div>
         </div>
+        {/* <div className={styled.position}>
+            <Product Item={user}/>
+        </div> */}
       </div>
       <Footer />
     </Fragment>
