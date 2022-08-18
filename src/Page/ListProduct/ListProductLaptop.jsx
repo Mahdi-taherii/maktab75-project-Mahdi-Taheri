@@ -14,6 +14,9 @@ export const ListProductLaptop = () => {
       setLaptop(response.data);
     });
   }, []);
+  const handleProduct = (value) =>{
+    localStorage.setItem("user" , JSON.stringify([value]));
+  }
 
   return (
     <Fragment>
@@ -121,6 +124,7 @@ export const ListProductLaptop = () => {
                       image={`http://localhost:3003/files/${item.image[0]}`}
                       name={item.name}
                       section={item.section}
+                      handleProduct={()=>{handleProduct(item)}}
                     />
                   </>
                 );

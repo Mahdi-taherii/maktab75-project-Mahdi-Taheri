@@ -43,11 +43,8 @@ export const HomePage = (props) => {
   }, []);
 
   const handleProduct =  (Id) => {
-    axios.put(`http://localhost:3003/Customer/1`,{
-      productId : Id.id
-    })
    localStorage.setItem("user" , JSON.stringify([Id]));
-   setUser(Id)
+
   };
 
   return (

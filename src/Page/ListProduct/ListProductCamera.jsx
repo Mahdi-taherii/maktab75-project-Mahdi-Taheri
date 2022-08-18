@@ -14,6 +14,9 @@ export const ListProductCamera = () => {
       setCamera(response.data);
     });
   }, []);
+  const handleProduct = (value) =>{
+    localStorage.setItem("user" , JSON.stringify([value]));
+  }
 
   return (
     <Fragment>
@@ -121,6 +124,7 @@ export const ListProductCamera = () => {
                       image={`http://localhost:3003/files/${item.image[0]}`}
                       name={item.name}
                       section={item.section}
+                      handleProduct={()=>{handleProduct(item)}}
                     />
                   </>
                 );
