@@ -125,6 +125,9 @@ border-radius:15px;
     position: relative;
     padding: 22px 0;
 }
+.titlecart{
+    margin-top: 18px;
+}
 .product a:hover{
  color: blue;
  transition: 0.2s;
@@ -234,6 +237,20 @@ border-radius:15px;
 }
 .ulmob li a:hover{
     color: blue;
+}
+
+.tasck{
+    display: none;
+    border: 1px solid rgb(95, 94, 94);
+    width: 170px;
+    height: 90px;
+    top: 150px;
+    right: 20px;
+    z-index: 2;
+    background-color: white;
+}
+.product:hover .tasck{
+    display: none;
 }
 
 

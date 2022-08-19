@@ -1,0 +1,87 @@
+body {
+    background-color: #efefef;
+  }
+  .Fragment {
+    width: 98%;
+    margin-right: 1%;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    height: 80px;
+  }
+  
+  .boxphoto {
+   
+  }
+  .boxdash {
+    width: 98%;
+    margin-right: 1%;
+    display: flex;
+  }
+  .navbar {
+    width: 22%;
+    height: 100vh;
+  }
+  .listproduct {
+    width: 75%;
+    margin-right: 1.5%;
+    
+  }
+  .order {
+    width: 95%;
+    margin-right: 2.5%;
+    border-radius: 15px;
+    padding: 10px;
+  
+    height: 170px;
+    background-color: white;
+  }
+  .pading{
+      padding-right: 10px;
+  }
+  .brand{
+      margin-top: 15px;
+      width: 95%;
+      margin-right: 2.5%;
+      border-radius: 15px;
+      padding: 10px;
+    
+      height: 250px;
+      background-color: white; 
+  }
+  .arshive{
+      width: 98%;
+      margin-right: 1%;
+      height: 70px;
+      border-radius: 10px;
+      background-color: white;
+      padding: 5px;
+  }
+  .filterPro{
+      display: flex;
+  }
+  .filterPro ul li {
+      list-style: none;
+      padding-right: 10px;
+      font-size: 15px;
+  }
+  .filterPro ul li:hover{
+      color: blue;
+  }
+  .cardList{
+      margin-top: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+      text-align: center;
+  }
+  
+  @media screen and (max-width: 900px){
+    .navbar{
+      display: none;
+    }
+    .arshive{
+      display: none;
+    }
+  }

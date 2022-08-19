@@ -5,7 +5,7 @@ import {
   Cart,
   FinalLevel,
   HomePage,
-  ListProduct,
+  ListProductMobile,
   LoginAdmin,
   ManageInventoryAndPrices,
   OrderManagement,
@@ -13,6 +13,8 @@ import {
   PaymentResult,
   Product,
   ProductManagement,
+  ListProductLaptop,
+  ListProductCamera
 } from "../Page/index";
 
 function HandleRoutes() {
@@ -24,7 +26,9 @@ function HandleRoutes() {
           <Route path={PATHS.FINAL_LEVEL} element={<FinalLevel />} />
           <Route path={PATHS.HOME} element={<HomePage />} />
           <Route path={PATHS.HOME_PAGE} element={<HomePage />} />
-          <Route path={PATHS.LIST_PRODUCT} element={<ListProduct />} />
+          <Route path={PATHS.LIST_PRODUCT_MOBILE} element={<ListProductMobile />} />
+          <Route path={PATHS.LIST_PRODUCT_LAPTOP} element={<ListProductLaptop />} />
+          <Route path={PATHS.LIST_PRODUCT_CAMERA} element={<ListProductCamera />} />
           <Route path={PATHS.LOGIN_ADMIN} element={<LoginAdmin />} />
           <Route path={PATHS.PRICES} element={<ManageInventoryAndPrices />} />
           <Route path={PATHS.ORDER} element={<OrderManagement />} />
