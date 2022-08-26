@@ -11,6 +11,22 @@
   "product": [
     {
       "image": [
+        "a56568b662cacbb49cd0a4d7158e4fc3",
+        "c37fd9b2774e49d8e514710bb6bfc627",
+        "d47d362f8c4c809c636f931393e6bd1c",
+        "d61bf6085e23ce6f65cfa19181467b9f"
+      ],
+      "name": "گوشی موبایل سامسونگ مدل Galaxy A53",
+      "group": "کالای دیجیتال",
+      "leader": "گوشی موبایل",
+      "Description": "<ul><li>فناوری صفحه‌نمایش :Dynamic AMOLED 2X</li><li>اندازه :6.8</li><li>شبکه های ارتباطی :2G، 3G، 4G، 5G</li><li>حافظه داخلی :256 گیگابایت</li><li>نسخه سیستم عامل :Android 11<li/></ul>",
+      "section": "12500000",
+      "inventory": "8",
+      "date": "1401/5/19",
+      "id": 1
+    },
+    {
+      "image": [
         "d4cdb684ec1de8ca71ac148c56b6cdb9",
         "d4cdb684ec1de8ca71ac148c56b6cdb9",
         "842d0ccaacbe2dbee364b2a05f84da3f",
@@ -20,8 +36,8 @@
       "group": "کالای دیجیتال",
       "leader": "گوشی موبایل",
       "Description": "<ul><li>فناوری صفحه‌نمایش :Dynamic AMOLED 2X</li><li>اندازه :6.8</li><li>شبکه های ارتباطی :2G، 3G، 4G، 5G</li><li>حافظه داخلی :256 گیگابایت</li><li>نسخه سیستم عامل :Android 11<li/></ul>",
-      "section": "3600",
-      "inventory": "10",
+      "section": "32450000",
+      "inventory": "16",
       "date": "1401/5/19",
       "id": 2
     },
@@ -36,10 +52,28 @@
       "group": "کالای دیجیتال",
       "leader": "گوشی موبایل",
       "Description": "<ul><li>فناوری صفحه‌نمایش :Dynamic AMOLED 2X</li><li>اندازه :6.8</li><li>شبکه های ارتباطی :2G، 3G، 4G، 5G</li><li>حافظه داخلی :256 گیگابایت</li><li>نسخه سیستم عامل :Android 11<li/></ul>",
-      "section": "155533",
-      "inventory": "11",
+      "section": 38449000,
+      "inventory": 25,
       "date": "1401/5/19",
+      "createdAt": 1660161854167,
       "id": 3
+    },
+    {
+      "image": [
+        "eed305a0a56289bf335cf1682cc3b982",
+        "e965fe506d6a39cc1b783e335cc34be6",
+        "60a8cb34372dab37317cbc60201c298f",
+        "68dd94a8eb6b62c5b9af299586742ebf"
+      ],
+      "name": "گوشی موبایل شیایومی مدل Mi 11 Ultra M2102K1c",
+      "group": "کالای دیجیتال",
+      "leader": "گوشی موبایل",
+      "Description": "<ul><li>فناوری صفحه‌نمایش :Dynamic AMOLED 2X</li><li>اندازه :6.8</li><li>شبکه های ارتباطی :2G، 3G، 4G، 5G</li><li>حافظه داخلی :256 گیگابایت</li><li>نسخه سیستم عامل :Android 11<li/></ul>",
+      "section": 35850000,
+      "inventory": 18,
+      "date": "1401/5/19",
+      "createdAt": 1660161935303,
+      "id": 4
     },
     {
       "image": [

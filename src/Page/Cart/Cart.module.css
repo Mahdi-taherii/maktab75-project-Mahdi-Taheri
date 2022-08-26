@@ -1,0 +1,14 @@
+.Cart{
+    background-color: white;
+    padding: 10px;
+}
+.order{
+    background-color: #efefef;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.data{
+    display: flex;
+    justify-content: space-between;
+}

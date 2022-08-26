@@ -1,11 +1,14 @@
 import './App.css';
+import { CommonContextProvider } from './contexts';
 import HandleRoutes from './routes/index.routes';
 
 
 function App() {
   return (
     <div className="App">
-     <HandleRoutes/>
+      <CommonContextProvider>
+      <HandleRoutes/>
+     </CommonContextProvider>
     </div>
   );
 }

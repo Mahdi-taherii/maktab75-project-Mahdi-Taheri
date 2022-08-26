@@ -1,4 +1,11 @@
-import React, { Fragment, useEffect, useRef, useState } from "react";
+import React, {
+  Fragment,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
+import { PATHS } from '../../config/routes.config'
 import styled from "./HomePage.module.css";
 import Header from "../../layout/Header/Header";
 import Footer from "../../layout/Footer/Footer";
@@ -17,16 +24,24 @@ import CardProduct from "../../components/Card/CardProduct";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { Product } from "../Product/Product";
+import { CommonContext } from "../../contexts";
 
 export const HomePage = (props) => {
+  const { functions, dataSource } = useContext(CommonContext);
+
   const [mobile, setMobile] = useState([]);
   const [laptop, setLaptop] = useState([]);
   const [camera, setCamera] = useState([]);
-  const [user ,setUser] = useState([])
+  const [user, setUser] = useState([]);
 
   useEffect(() => {
     axios
-      .get("http://localhost:3003/product?leader=گوشی موبایل")
+      .get("http://localhost:3003/product?leader=گوشی موبایل", {
+        data: {
+          limit: 6,
+          page: 0
+        }
+      })
       .then((response) => {
         setMobile(response.data);
       });
@@ -42,13 +57,23 @@ export const HomePage = (props) => {
       });
   }, []);
 
-  const handleProduct =  (Id) => {
-   localStorage.setItem("user" , JSON.stringify([Id]));
+  useEffect(() => {
+    console.table(dataSource);
+  }, [dataSource]);
 
+  const handleProduct = (Id) => {
+    // localStorage.setItem("user", JSON.stringify([Id]));
   };
 
   return (
     <Fragment>
+      {/* <button
+        onClick={() => {
+          functions.dataSource.update("myname", { name: "this is my name" });
+        }}
+      >
+        this is a button
+      </button> */}
       <Header />
 
       <div className={styled.body}>
@@ -111,14 +136,16 @@ export const HomePage = (props) => {
             {mobile.map((item) => {
               return (
                 <>
-                  <CardProduct
-                    image={`http://localhost:3003/files/${item.image[0]}`}
-                    name={item.name}
-                    section={item.section}
-                    handleProduct={() => {
-                      handleProduct(item);
-                    }}
-                  />
+                  <Link to={[PATHS.PRODUCT, item.id].join("/")}>
+                    <CardProduct
+                      image={`http://localhost:3003/files/${item.image[0]}`}
+                      name={item.name}
+                      section={item.section}
+                      handleProduct={() => {
+                        handleProduct(item);
+                      }}
+                    />
+                  </Link>
                 </>
               );
             })}
@@ -140,14 +167,16 @@ export const HomePage = (props) => {
             {laptop.map((item) => {
               return (
                 <>
-                  <CardProduct
-                    image={`http://localhost:3003/files/${item.image[0]}`}
-                    name={item.name}
-                    section={item.section}
-                    handleProduct={() => {
-                      handleProduct(item);
-                    }}
-                  />
+                  <Link to={[PATHS.PRODUCT, item.id].join("/")}>
+                    <CardProduct
+                      image={`http://localhost:3003/files/${item.image[0]}`}
+                      name={item.name}
+                      section={item.section}
+                      handleProduct={() => {
+                        handleProduct(item);
+                      }}
+                    />
+                  </Link>
                 </>
               );
             })}
@@ -166,22 +195,21 @@ export const HomePage = (props) => {
             {camera.map((item) => {
               return (
                 <>
-                  <CardProduct
-                    image={`http://localhost:3003/files/${item.image[0]}`}
-                    name={item.name}
-                    section={item.section}
-                    handleProduct={() => {
-                      handleProduct(item);
-                    }}
-                  />
+                  <Link to={[PATHS.PRODUCT, item.id].join("/")}>
+                    <CardProduct
+                      image={`http://localhost:3003/files/${item.image[0]}`}
+                      name={item.name}
+                      section={item.section}
+                      handleProduct={() => {
+                        handleProduct(item);
+                      }}
+                    />
+                  </Link>
                 </>
               );
             })}
           </div>
         </div>
-        {/* <div className={styled.position}>
-            <Product Item={user}/>
-        </div> */}
       </div>
       <Footer />
     </Fragment>

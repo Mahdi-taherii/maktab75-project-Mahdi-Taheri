@@ -39,3 +39,6 @@
 .card:hover .section {
   color: brown;
 }
+.photo{
+  object-fit: contain;
+}

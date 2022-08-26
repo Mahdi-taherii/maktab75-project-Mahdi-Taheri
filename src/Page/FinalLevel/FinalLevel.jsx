@@ -4,8 +4,16 @@ import styled from "./FinalLevel.module.css";
 import Footer from "../../layout/Footer/Footer";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { useNavigate } from "react-router-dom";
 
 export const FinalLevel = () => {
+
+  const navigate =useNavigate()
+ 
+ const handleSend = ()=>{
+  navigate("/Gateway")
+ }
+
   return (
     <Fragment>
       <Header />
@@ -28,6 +36,9 @@ export const FinalLevel = () => {
             <Form.Label>تلفن همراه : </Form.Label>
             <Form.Control type="text" />
           </Form.Group>
+          <Button variant="primary" type="submit" onClick={()=>{handleSend()}}>
+            پرداخت
+          </Button>
         </Form>
       </div>
       <Footer />

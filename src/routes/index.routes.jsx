@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
 import { PATHS } from "../config/routes.config";
 import {
   Cart,
@@ -18,6 +18,7 @@ import {
 } from "../Page/index";
 
 function HandleRoutes() {
+  
   return (
     <div>
       <BrowserRouter>
@@ -34,7 +35,7 @@ function HandleRoutes() {
           <Route path={PATHS.ORDER} element={<OrderManagement />} />
           <Route path={PATHS.GATEWAY} element={<PaymenyGateway />} />
           <Route path={PATHS.RESULT} element={<PaymentResult />} />
-          <Route path={PATHS.PRODUCT} element={<Product />} />
+          <Route path={[PATHS.PRODUCT, ':id'].join("/")} element={<Product />} />
           <Route path={PATHS.MANAGEMENT} element={<ProductManagement />} />
         </Routes>
       </BrowserRouter>
