@@ -121,7 +121,7 @@ const handlepro = () =>{
         <div></div>
         <div className={styled.cart}>
           <div className={styled.iconcart}>
-            <img src={shop} alt="shop" width={30} />
+            <Link to="/Cart"><img src={shop} alt="shop" width={30} /></Link>
           </div>
           <div className={styled.section}>
             <p className={styled.titlecart}>سبد خرید</p>

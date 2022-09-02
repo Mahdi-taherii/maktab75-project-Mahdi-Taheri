@@ -36,12 +36,7 @@ export const HomePage = (props) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3003/product?leader=گوشی موبایل", {
-        data: {
-          limit: 6,
-          page: 0
-        }
-      })
+      .get("http://localhost:3003/product?leader=گوشی موبایل")
       .then((response) => {
         setMobile(response.data);
       });
@@ -67,13 +62,6 @@ export const HomePage = (props) => {
 
   return (
     <Fragment>
-      {/* <button
-        onClick={() => {
-          functions.dataSource.update("myname", { name: "this is my name" });
-        }}
-      >
-        this is a button
-      </button> */}
       <Header />
 
       <div className={styled.body}>
